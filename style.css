@@ -1,11 +1,83 @@
+*,
+*::before,
+*::after {
+    box-sizing:border-box
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid red;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.menulist {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    list-style-type: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.menulist li {
+    float: left;
+    width: 33.33333333%;
+    margin: 20px;
+    border: 2px solid red;
+    display: table;
+}
+
+.menulist li a {
+    display: table-cell;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.header2 {
+    width: 200px;
     background-color: red;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
-li {
-    font-family: Arial, Helvetica, sans-serif;
+.header3 {
+    width: 125px;
+    background-color: red;
+    color: white;
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
+
+.description {
+    border: 2px solid red;
+    height: 200px;
+    margin: 5px 10px 15px;
+    padding: 10px;
+    
+}
+
+.list {
+    border: 2px solid red;
+    height: 400px;
+    margin: 5px 10px 15px;
+    list-style: decimal inside none;
+    padding: 10px;
+}
+
+.header2,
+.header3 {
+    margin: 5px;
+}
+
+.header,
+.header2,
+.header3,
+.menulist,
+.description,
+.list {
+    font-family: Helvetica, Arial, sans-serif;
 }
